@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>特色產品</title>
+    
+    <style>
+        /* 基本樣式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #ac4545e7;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        header img {
+            height: 50px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 10px;
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        nav ul li:hover > ul {
+            display: block;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            padding: 10px;
+        }
+        nav ul li ul li {
+            margin: 5px 0;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        .product {
+            display: inline-block;
+            width: 30%;
+            margin: 1%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .product h3 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        .product p {
+            margin-bottom: 10px;
+        }
+        .product button {
+            background-color: #221571;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .product button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        .more-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.more-button button {
+    font-size: 1.5em;
+    color: #333;
+    background-color: #fff;
+    border: 3px solid #19528f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.more-button button:hover {
+    background-color: #3b060662;
+    color: rgb(80, 39, 169);
+    border-color: #5445a0;
+}
+
+    </style>
+</head>
+<body>
+    <!-- 頁首 -->
+   
+    <header>
+        <img src="images/LOGO (2).jpg" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="Home_index.html">首頁</a></li>
+                <li><a href="Total Products_index.html">特色產品</a></li>
+                <li><a href="Attractions_index.html">景點介紹</a>
+                    
+                </li>
+                <li><a href="#">相關網站</a>
+                    <ul>
+                        <li><a href="https://www.facebook.com/Kinmengov/" target="_blank">金門縣政府FB</a></li>
+                        <li><a href="https://visitkinmen.pixnet.net/blog"target="_blank">金門部落格</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 主要內容 -->
+    <main>
+        <h1>我們的特色產品</h1>
+        <div class="product">
+            <img src="images/liquor_0.jpg" alt="產品1">
+            <h3>金門高粱酒</h3>
+            <p>一口品味，百年傳承</p>
+            <button onclick="window.location.href='sorghum wine_index.html';">PUSH</button>
+        </div>
+        <div class="product">
+            <img src="images/knife_1.jpg" alt="產品2">
+            <h3>金門菜刀</h3>
+            <p>鋒利如初，歷久彌新</p>
+            <button onclick="window.location.href='kitchen knife_index.html';">PUSH</button>
+        </div>
+        <div class="product">
+            <img src="images/suger_1.jpg" alt="產品3">
+            <h3>金門貢糖</h3>
+            <p>品一口，回味一段幸福時光</p>
+            <button onclick="window.location.href='tribute sugar_index.html';">PUSH</button>
+        </div>
+        <div class="product">
+            <img src="images/beef_1.png" alt="產品4">
+            <h3>金門牛肉乾</h3>
+            <p>香氣撲鼻，齒頰留香</p>
+            <button onclick="window.location.href='beef jerky_index.html';">PUSH</button>
+        </div>
+        <div class="product">
+            <img src="images/cake.jpg" alt="產品5">
+            <h3>燒餅</h3>
+            <p>酥脆香濃，暖心手作</p>
+            <button onclick="window.location.href='Shaobing_index.html';">PUSH</button>
+        </div>
+        <div class="product">
+            <img src="images/root.jpg" alt="產品6">
+            <h3>金門一條根</h3>
+            <p>筋骨放鬆，活力再現</p>
+            <button onclick="window.location.href='a root_index.html';">PUSH</button>
+        </div>
+    </main>
+   
+    
+
+    <!-- 頁尾 -->
+    <footer>
+        <p>&copy; 2024 網站設計</p>
+        <p>設計者：羅伊娠 | 學號：41132207</p>
+        <p>此網站僅作為學術用途，非商業網站。</p>
+    </footer>
+</body>
+</html>

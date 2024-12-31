@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>牛肉乾</title>
+    <style>
+        /* 全局樣式 */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        header {
+            text-align: center;
+            padding: 15px;
+            background-color: #ac4545e7;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #333;
+        }
+
+        /* 產品介紹 */
+        .main-product {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .main-product img {
+            max-width: 300px;
+            margin-right: 20px;
+        }
+        .main-product .details {
+            max-width: 500px;
+        }
+        .main-product h2 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+        .main-product p {
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        .buy-now {
+            background-color: #caa14c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .buy-now:hover {
+            background-color: #af8f3d;
+        }
+
+        /* 推薦產品 */
+        .suggestions {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .suggestions h3 {
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+        .suggestions .product-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .product-item {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 200px;
+            text-align: center;
+        }
+        .product-item img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .product-item h4 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product-item p {
+            color: #666;
+        }
+
+        /* 訂閱電子報 */
+        .newsletter {
+            padding: 40px 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+        .newsletter input {
+            padding: 10px;
+            width: 60%;
+            max-width: 300px;
+            border: none;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        .newsletter button {
+            padding: 10px 20px;
+            background-color: #caa14c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .newsletter button:hover {
+            background-color: #af8f3d;
+        }
+
+        /* 頁腳 */
+        footer {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 頁面標頭 -->
+    <header>
+        <h1>產品介紹</h1>
+    </header>
+
+    <!-- 主要產品介紹 -->
+    <section class="main-product">
+        <img src="images/beef_1.png" alt="主打產品圖片">
+        <div class="details">
+            <h2>金門牛肉乾</h2>
+            <p>『金門限定版牛肉乾』使用牛的肩胛里肌部位，肌肉發達，細筋多，肉質軟嫩適中，保留牛肉的筋脈與纖維，呈現美麗的楓葉紋路，再加上獨特配方，搭配多種辛香料熬煮，長時間滷煮烘烤，堅持經過細火烘炒及高溫烘烤多道程序，入口牛肉香醇風味，讓人允指回味!
+                重量:12包 每包10g-20g</p>
+          
+        </div>
+    </section>
+
+    <!-- 推薦產品 -->
+    <section class="suggestions">
+        <h3>您可能喜歡</h3>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="images/beef_2.png" alt="推薦產品1">
+                <h2> 紅麴辣味牛肉乾</h2>
+                <h4>『金門限定版牛肉乾』使用牛的肩胛里肌部位，肌肉發達，細筋多，肉質軟嫩適中，保留牛肉的筋脈與纖維，呈現美麗的楓葉紋路，再加上獨特配方，搭配多種辛香料熬煮，長時間滷煮烘烤，堅持經過細火烘炒及高溫烘烤多道程序，入口牛肉香醇風味，讓人允指回味!</h4>
+                
+            </div>
+            <div class="product-item">
+                <img src="images/beef_3.png" alt="推薦產品2">
+                <h2>黑胡椒牛肉乾</h2>
+                <h4>『金門限定版牛肉乾』使用牛的肩胛里肌部位，肌肉發達，細筋多，肉質軟嫩適中，保留牛肉的筋脈與纖維，呈現美麗的楓葉紋路，再加上獨特配方，搭配多種辛香料熬煮，長時間滷煮烘烤，堅持經過細火烘炒及高溫烘烤多道程序，入口牛肉香醇風味，讓人允指回味!</h4>
+                
+            </div>
+            
+        </div>
+    </section>
+
+
+
+    <!-- 頁腳 -->
+    <footer>
+        <p>&copy; 2024 網站設計</p>
+        <p>設計者：羅伊娠 | 學號：41132207</p>
+        <p>此網站僅作為學術用途，非商業網站。</p>
+    </footer>
+
+</body>
+</html>

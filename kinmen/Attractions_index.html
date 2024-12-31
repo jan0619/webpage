@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金門景點介紹</title>
+    <style>
+        /* 基本樣式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Microsoft JhengHei", Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* 頁首樣式 */
+        header {
+            background-color: #ac4545e7;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #140f0f;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li a {
+            padding: 10px;
+            white-space: nowrap;
+        }
+
+        /* 主要內容樣式 */
+        main {
+            padding: 30px 10px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #0c0c0c;
+        }
+        .spot {
+            display: inline-block;
+            width: 30%;
+            margin: 1%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .spot:hover {
+            transform: scale(1.05);
+        }
+        .spot img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #4CAF50;
+        }
+        .spot h3 {
+            font-size: 1.5em;
+            margin: 15px 0 10px;
+            color: #0b0922b0;
+        }
+        .spot p {
+            font-size: 1em;
+            color: #555;
+            padding: 0 10px;
+        }
+        .spot button {
+            margin: 15px 0;
+            background-color: #5f4eca;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .spot button:hover {
+            background-color: #388E3C;
+        }
+
+        /* 概覽區塊 */
+        .intro {
+            background-color: #cd9f9fe7;
+            padding: 20px;
+            margin: 20px auto;
+            border-left: 5px solid #eb383877;
+            width: 80%;
+            text-align: left;
+        }
+
+        /* 頁尾樣式 */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+        .more-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .more-button button {
+            font-size: 1.5em;
+            color: #333;
+            background-color: #fff;
+            border: 3px solid #221571;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .more-button button:hover {
+            background-color: #3b060662;
+            color: white;
+            border-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/LOGO (2).jpg" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="Home_index.html">首頁</a></li>
+                <li><a href="Total Products_index.html">特色產品</a></li>
+                <li><a href="Attractions_index.html">景點介紹</a></li>
+                <li><a href="#">相關網站</a>
+                    <ul>
+                        <li><a href="https://www.facebook.com/Kinmengov/" target="_blank">金門縣政府FB</a></li>
+                        <li><a href="https://visitkinmen.pixnet.net/blog" target="_blank">金門部落格</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+   
+</body>
+</html>
+
+<body>
+
+    <!-- 概覽介紹 -->
+    <div class="intro">
+        <h2>關於金門</h2>
+        <p>金門，位於台灣海峽，是一座充滿歷史文化的島嶼。這裡有獨特的戰地風光、優美的自然景觀，以及豐富的美食與特產。無論是歷史愛好者還是自然旅遊者，都能在金門找到獨一無二的旅遊體驗。</p>
+    </div>
+
+    <!-- 主要內容 -->
+    <main>
+        <h2>熱門景點推薦</h2>
+
+        <!-- 景點1 -->
+        <div class="spot">
+            <img src="images/artillery position.jpg" alt="獅山砲陣地">
+            <h3>獅山砲陣地</h3>
+            <p>感受震撼的砲擊表演，體驗金門的軍事風光。</p>
+            <button onclick="window.location.href='lion_index.html';">了解更多</button>
+        </div>
+
+        <!-- 景點2 -->
+        <div class="spot">
+            <img src="images/tunnel.jpg" alt="坑道">
+            <h3>坑道</h3>
+            <p>俯瞰金門美景，欣賞獨特的建築藝術與歷史風采。</p>
+            <button onclick="window.location.href='Tunnel_index.html';">了解更多</button>
+        </div>
+
+        <!-- 景點3 -->
+        <div class="spot">
+            <img src="images/Jiangong Island.jpg" alt="建功嶼">
+            <h3>建功嶼</h3>
+            <p>隱藏在潮汐中的絕美秘境</p>
+            <button onclick="window.location.href='Jianggong Islet_index.html';">了解更多</button>
+        </div>
+         <!-- 景點4 -->
+        <div class="spot">
+            <img src="images/model.jpg" alt="模範街">
+            <h3>模範街</h3>
+            <p>時光交錯的風華街道</p>
+            <button onclick="window.location.href='Model Street_index.html';">了解更多</button>
+        </div>
+         <!-- 景點5 -->
+         <div class="spot">
+            <img src="images/style house.jpeg" alt="洋樓">
+            <h3>陳景蘭洋樓</h3>
+            <p>走進時光隧道，邂逅百年風華</p>
+            <button onclick="window.location.href='Jinglan_index.html';">了解更多</button>
+        </div>
+        <!-- 景點6 -->
+        <div class="spot">
+            <img src="images/bridge.jpg" alt="橋">
+            <h3>金門大橋</h3>
+            <p>探索金門新地標，踏上壯麗金門大橋！</p>
+            <button onclick="window.location.href='bridge_index.html';">了解更多</button>
+        </div>
+    </main>
+  
+
+    <!-- 頁尾 -->
+    <footer>
+        <p>&copy; 2024 網站設計</p>
+        <p>設計者：羅伊娠 | 學號：41132207</p>
+        <p>此網站僅作為學術用途，非商業網站。</p>
+    </footer>
+</body>
+</html>
