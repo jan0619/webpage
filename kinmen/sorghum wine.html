@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高粱酒</title>
+    <style>
+        /* 全局樣式 */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        header {
+            text-align: center;
+            padding: 15px;
+            background-color: #ac4545e7;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #333;
+        }
+
+        /* 產品介紹 */
+        .main-product {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .main-product img {
+            max-width: 300px;
+            margin-right: 20px;
+        }
+        .main-product .details {
+            max-width: 500px;
+        }
+        .main-product h2 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+        .main-product p {
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        .buy-now {
+            background-color: #caa14c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .buy-now:hover {
+            background-color: #af8f3d;
+        }
+
+        /* 推薦產品 */
+        .suggestions {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .suggestions h3 {
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+        .suggestions .product-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .product-item {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 200px;
+            text-align: center;
+        }
+        .product-item img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .product-item h4 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product-item p {
+            color: #666;
+        }
+
+        /* 訂閱電子報 */
+        .newsletter {
+            padding: 40px 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+        .newsletter input {
+            padding: 10px;
+            width: 60%;
+            max-width: 300px;
+            border: none;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        .newsletter button {
+            padding: 10px 20px;
+            background-color: #caa14c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .newsletter button:hover {
+            background-color: #af8f3d;
+        }
+
+        /* 頁腳 */
+        footer {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 頁面標頭 -->
+    <header>
+        <h1>產品介紹</h1>
+    </header>
+
+    <!-- 主要產品介紹 -->
+    <section class="main-product">
+        <img src="images/liquor_0.jpg" alt="主打產品圖片">
+        <div class="details">
+            <h2>金門高粱酒</h2>
+            <p>金門酒廠以傲人的釀酒工藝及得天獨厚的天然泉水，釀造出絕佳的酒液，酒液清若泉水，流露著芬芳馥郁的高粱香氣，入口甜而爽口，淨醇柔順帶有細緻口感，味道清香甘甜，餘韻迷人，紮實的結構和韻味在口中漫延，充份展現出最佳白酒獨特風味。</p>
+            <p>酒度：58度 | 容量：0.3L、0.6L、0.75L</p>
+            
+        </div>
+    </section>
+
+    <!-- 推薦產品 -->
+    <section class="suggestions">
+        <h3>您可能喜歡</h3>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="images/liquor_2.png" alt="推薦產品1">
+                <h2> 李洋16年紀念酒</h2>
+                <h4>16，造就完美平衡，始終堅持單醇，終能經久彌新，特選儲陳16年窖
+                    藏老酒，曠時熟陳的古法釀酒工藝，淬鍊出每一口令人驚嘆的金門高粱
+                    酒，酒液清亮並透著微微金色光暈，金門高粱酒特有的醬陳香氣突出而
+                    優雅，酒體豐厚，馥郁著醃漬梅子、果乾等複合香氣，入口綿甜、圓潤
+                    柔順、尾韻細緻悠長，為慶賀這得來不易的成就，更特別添加食用級純
+                    金箔，輕輕晃動金輝奪目、口口甘醇酒體溫潤，閃耀燦爛，至臻完美，
+                    獨具收藏價值。</h4>
+                <p>酒度：57.1度 | 容量：1.6L</p>
+                
+            </div>
+            <div class="product-item">
+                <img src="images/liquor_4.jpg" alt="推薦產品2">
+                <h2>金門酒廠建廠69週年紀念酒</h2>
+                <h4>嚴選皮厚紅潤、顆粒小而飽滿之純糯性品種高粱為釀酒原料，清亮透明的色澤，陣陣天然穀糧香與優雅的複合香氣撲鼻而來，融合圓潤豐富的果香，多層次的氣息讓入口的甘醇在舌尖舞動，浮現出隱約的花蜜香，餘韻回甘有勁。</h4>
+                <p>酒度：58.8度 | 容量：0.75L</p>
+                
+            </div>
+            <div class="product-item">
+                <img src="images/liquor_3.png" alt="推薦產品3">
+                <h2>陳年金門高粱酒</h2>
+                <h4>在天然資源擁 戴下，承襲古法釀造「三高二低一翻」，純糧固態發酵釀酒工藝，陳放酒窖中窖藏五年，窖內先天自然的冷空氣使酒香融合，酒質陳香濃郁，酒體豐厚，綿甜醇和， 回味悠長，是為頂級的高粱佳釀。</h4>
+                <p>酒度：56度 | 容量：0.6L</p>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 頁腳 -->
+    <footer>
+        <p>&copy; 2024 網站設計</p>
+        <p>設計者：羅伊娠 | 學號：41132207</p>
+        <p>此網站僅作為學術用途，非商業網站。</p>
+    </footer>
+
+</body>
+</html>

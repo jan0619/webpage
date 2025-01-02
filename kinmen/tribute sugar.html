@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>貢糖</title>
+    <style>
+        /* 全局樣式 */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        header {
+            text-align: center;
+            padding: 15px;
+            background-color: #ac4545e7;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #333;
+        }
+
+        /* 產品介紹 */
+        .main-product {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .main-product img {
+            max-width: 300px;
+            margin-right: 20px;
+        }
+        .main-product .details {
+            max-width: 500px;
+        }
+        .main-product h2 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+        .main-product p {
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        .buy-now {
+            background-color: #caa14c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .buy-now:hover {
+            background-color: #af8f3d;
+        }
+
+        /* 推薦產品 */
+        .suggestions {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .suggestions h3 {
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+        .suggestions .product-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .product-item {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 200px;
+            text-align: center;
+        }
+        .product-item img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .product-item h4 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product-item p {
+            color: #666;
+        }
+
+        /* 訂閱電子報 */
+        .newsletter {
+            padding: 40px 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+        .newsletter input {
+            padding: 10px;
+            width: 60%;
+            max-width: 300px;
+            border: none;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        .newsletter button {
+            padding: 10px 20px;
+            background-color: #caa14c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .newsletter button:hover {
+            background-color: #af8f3d;
+        }
+
+        /* 頁腳 */
+        footer {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 頁面標頭 -->
+    <header>
+        <h1>產品介紹</h1>
+    </header>
+
+    <!-- 主要產品介紹 -->
+    <section class="main-product">
+        <img src="images/suger_1.jpg" alt="主打產品圖片">
+        <div class="details">
+            <h2>豬腳貢糖</h2>
+            <p>口味:原味、豬腳、甜酥。傳統貢糖的代表作，多年銷售佳績，廣受大眾喜好，花生壓磨製作，保留花生原始風味，酥糖口感，細緻綿密。
+                香酥不甜膩的口感，入口即化為其特色，是吃素朋友的最佳選擇。
+                重量:12包 每包10g-20g</p>
+           
+        </div>
+    </section>
+
+    <!-- 推薦產品 -->
+    <section class="suggestions">
+        <h3>您可能喜歡</h3>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="images/suger_2.jpg" alt="推薦產品1">
+                <h2> 牛軋糖</h2>
+                <h4>牛軋糖系列目前有杏仁、花生、芋頭、杏仁咖啡、杏仁蔓越梅等多種口味。 吃起來甜而不膩、聞起來奶香濃郁、口感軟Q不黏牙，越咬越有嚼勁；採用高成本低糖的海藻糖來提升口感，健康又美味，為本店熱賣人氣商品</h4>
+             
+            </div>
+            <div class="product-item">
+                <img src="images/suger_3.png" alt="推薦產品2">
+                <h2>綜合貢糖</h2>
+                <h4>所有傳統口味一次滿足，低糖，無添加防腐劑，一包會有5～6種傳統口味，遇缺貨會以別種口味補上。</h4>
+                
+            </div>
+            <div class="product-item">
+                <img src="images/suger_4.png" alt="推薦產品3">
+                <h2>芙蓉酥(抹茶杏仁‧素)</h2>
+                <h4>酥糖外層，中間包裹抹茶酥粉加杏仁薄片
+                    入口時帶有淡淡的清新抹茶香氣，及杏仁片的口感</h4>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 頁腳 -->
+    <footer>
+        <p>&copy; 2024 網站設計</p>
+        <p>設計者：羅伊娠 | 學號：41132207</p>
+        <p>此網站僅作為學術用途，非商業網站。</p>
+    </footer>
+
+</body>
+</html>
